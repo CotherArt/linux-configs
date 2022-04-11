@@ -1,5 +1,4 @@
 syntax on
-
 set number
 set relativenumber
 set cursorline
@@ -11,19 +10,15 @@ set smartcase
 set noswapfile
 set tabstop=4
 set shiftwidth=4
+set laststatus=2
+set noshowmode
 
-nnoremap x "_x
-nnoremap d "_d
-nnoremap D "_D
-vnoremap d "_d
-
-nnoremap <leader>d ""d
-nnoremap <leader>D ""D
-vnoremap <leader>d ""d
-
-call plug#begin('~/.vim/plugged')
-	Plug 'dracula/vim'
-	Plug 'preservim/nerdtree'
-call plug#end()
+source ~/.vim/plugins.vim
+source ~/.vim/maps.vim
 
 colorscheme dracula
+
+"lightline colorscheme
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ }
