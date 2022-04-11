@@ -21,3 +21,9 @@ nnoremap <leader>d ""d
 nnoremap <leader>D ""D
 vnoremap <leader>d ""d
 
+call plug#begin('~/.vim/plugged')
+	Plug 'dracula/vim'
+	Plug 'preservim/nerdtree'
+call plug#end()
+
+colorscheme dracula
