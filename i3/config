@@ -10,7 +10,7 @@
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 #
 # Mi configuracion -----------------------
-exec_always --no-startu-id nitrogen --restore
+exec_always --no-startup-id nitrogen --restore
 
 #i3 Gaps configuration --------------------
 smart_gaps on
